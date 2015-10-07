@@ -7,8 +7,14 @@
 //
 
 #import "BattleViewController.h"
+#import "MagicalCreature.h"
 
 @interface BattleViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *yourMonsterImage;
+@property (weak, nonatomic) IBOutlet UIImageView *randomMonsterImage;
+@property MagicalCreature *chosenCreature;
+@property MagicalCreature *randomCreature;
+@property MagicalCreature *winningCreature;
 
 @end
 
@@ -17,6 +23,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+- (IBAction)onButtonPressed:(id)sender {
+    NSString *monster = @"Bob";
+    UIAlertController *winAlert = [UIAlertController alertControllerWithTitle:@"Flawless Victory!" message:[NSString stringWithFormat:@"%@ wins", monster] preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Fight Again" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        [self performSegueWithIdentifier:@"segue.push.alert" sender:self];
+    }];
+    [winAlert addAction:cancel];
+    [self presentViewController:winAlert animated:true completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

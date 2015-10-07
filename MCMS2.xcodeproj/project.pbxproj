@@ -20,6 +20,12 @@
 		E02622471BC4910500F51766 /* monster-image-hardcor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E02622441BC4910500F51766 /* monster-image-hardcor.jpg */; settings = {ASSET_TAGS = (); }; };
 		E026224A1BC4A7CF00F51766 /* BattleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E02622491BC4A7CF00F51766 /* BattleViewController.m */; settings = {ASSET_TAGS = (); }; };
 		E026224D1BC4A8D600F51766 /* DismissSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = E026224C1BC4A8D600F51766 /* DismissSegue.m */; settings = {ASSET_TAGS = (); }; };
+		E02622541BC4EBCF00F51766 /* image6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E026224E1BC4EBCF00F51766 /* image6.jpg */; settings = {ASSET_TAGS = (); }; };
+		E02622551BC4EBCF00F51766 /* image5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E026224F1BC4EBCF00F51766 /* image5.jpg */; settings = {ASSET_TAGS = (); }; };
+		E02622571BC4EBCF00F51766 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E02622511BC4EBCF00F51766 /* image3.jpg */; settings = {ASSET_TAGS = (); }; };
+		E02622581BC4EBCF00F51766 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E02622521BC4EBCF00F51766 /* image2.jpg */; settings = {ASSET_TAGS = (); }; };
+		E02622591BC4EBCF00F51766 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E02622531BC4EBCF00F51766 /* image1.jpg */; settings = {ASSET_TAGS = (); }; };
+		E026225B1BC4EC6200F51766 /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E026225A1BC4EC6200F51766 /* image4.jpg */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +50,12 @@
 		E02622491BC4A7CF00F51766 /* BattleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BattleViewController.m; sourceTree = "<group>"; };
 		E026224B1BC4A8D600F51766 /* DismissSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissSegue.h; sourceTree = "<group>"; };
 		E026224C1BC4A8D600F51766 /* DismissSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DismissSegue.m; sourceTree = "<group>"; };
+		E026224E1BC4EBCF00F51766 /* image6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image6.jpg; sourceTree = "<group>"; };
+		E026224F1BC4EBCF00F51766 /* image5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image5.jpg; sourceTree = "<group>"; };
+		E02622511BC4EBCF00F51766 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
+		E02622521BC4EBCF00F51766 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		E02622531BC4EBCF00F51766 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		E026225A1BC4EC6200F51766 /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image4.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +112,12 @@
 		E02622221BC45F3000F51766 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E026224E1BC4EBCF00F51766 /* image6.jpg */,
+				E026224F1BC4EBCF00F51766 /* image5.jpg */,
+				E026225A1BC4EC6200F51766 /* image4.jpg */,
+				E02622511BC4EBCF00F51766 /* image3.jpg */,
+				E02622521BC4EBCF00F51766 /* image2.jpg */,
+				E02622531BC4EBCF00F51766 /* image1.jpg */,
 				E02622421BC4910500F51766 /* monster-image-amarican-chopper.png */,
 				E02622431BC4910500F51766 /* monster-image-danimal.png */,
 				E02622441BC4910500F51766 /* monster-image-hardcor.jpg */,
@@ -165,9 +183,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E02622581BC4EBCF00F51766 /* image2.jpg in Resources */,
+				E02622571BC4EBCF00F51766 /* image3.jpg in Resources */,
 				E02622451BC4910500F51766 /* monster-image-amarican-chopper.png in Resources */,
+				E02622551BC4EBCF00F51766 /* image5.jpg in Resources */,
+				E02622591BC4EBCF00F51766 /* image1.jpg in Resources */,
 				E02622321BC45F3000F51766 /* LaunchScreen.storyboard in Resources */,
+				E02622541BC4EBCF00F51766 /* image6.jpg in Resources */,
 				E026222F1BC45F3000F51766 /* Assets.xcassets in Resources */,
+				E026225B1BC4EC6200F51766 /* image4.jpg in Resources */,
 				E02622461BC4910500F51766 /* monster-image-danimal.png in Resources */,
 				E02622471BC4910500F51766 /* monster-image-hardcor.jpg in Resources */,
 				E026222D1BC45F3000F51766 /* Main.storyboard in Resources */,

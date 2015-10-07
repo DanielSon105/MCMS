@@ -25,6 +25,7 @@
     UIImage *image1 = [UIImage imageNamed:@"monster-image-hardcor.jpg"];
     UIImage *image2 = [UIImage imageNamed:@"monster-image-danimal.png"];
     UIImage *image3 = [UIImage imageNamed:@"monster-image-amarican-chopper.png"];
+
     MagicalCreature *creature1 = [[MagicalCreature alloc] initWithName:@"HardCor" andAttack:@"Karate Chop" andImage: image1 andAccessories:[NSMutableArray arrayWithObjects:@"HardCor Parkour", @"Stapler", @"Clean Socks", @"Bottle o' Mojo", nil]];
     MagicalCreature *creature2 = [[MagicalCreature alloc] initWithName:@"Danimal" andAttack:@"Rabies Bite" andImage:image2 andAccessories:[NSMutableArray arrayWithObjects:@"Rat Trap", @"Fur Balls 'o Fire", @"Fangs", @"Drumsticks", nil]];
     MagicalCreature *creature3 = [[MagicalCreature alloc] initWithName:@"AmaricanChopper" andAttack:@"Brass Knuckle Punch" andImage:image3 andAccessories:[NSMutableArray arrayWithObjects:@"Bike", @"Ol' Lady", @"Patriotic Flag", @"Fists", @"Bottle o' Whiskey", nil]];
@@ -37,7 +38,8 @@
 
 }
 - (IBAction)onAddButtonTapped:(id)sender {
-    MagicalCreature *newCreature = [[MagicalCreature alloc]initWithName:self.creatureNameTextField.text andAttack:self.creatureAttackTextField.text andImage:nil andAccessories:nil];
+    UIImage *randomImage = [UIImage imageNamed:[NSString stringWithFormat:@"image%u.jpg", 1+arc4random_uniform(6)]];
+    MagicalCreature *newCreature = [[MagicalCreature alloc]initWithName:self.creatureNameTextField.text andAttack:self.creatureAttackTextField.text andImage:randomImage andAccessories:nil];
     [self.creatures addObject:newCreature];
     [self.tableView reloadData];
     self.creatureNameTextField.text = @"";

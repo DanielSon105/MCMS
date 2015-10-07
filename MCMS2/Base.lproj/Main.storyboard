@@ -168,7 +168,7 @@
                                     <rect key="frame" x="41" y="228" width="46" height="30"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="R1d-vT-Lum" kind="modal" id="wpX-UJ-SPj"/>
+                                    <segue destination="R1d-vT-Lum" kind="presentation" id="wpX-UJ-SPj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -195,12 +195,6 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="8D7-lg-iuh">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="Y1f-dM-4kh">
-                            <connections>
-                                <action selector="onBackButtonPressed:" destination="F0n-Bz-HCb" id="Xga-FT-xme"/>
-                                <segue destination="BYZ-38-t0r" kind="show" id="H9f-c0-IWp"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Edit" id="Uk1-8i-mMc">
                             <connections>
                                 <action selector="onEditButtonPressed:" destination="F0n-Bz-HCb" id="oS8-iU-HSy"/>
@@ -220,10 +214,10 @@
             </objects>
             <point key="canvasLocation" x="2043" y="366"/>
         </scene>
-        <!--View Controller-->
+        <!--Battle View Controller-->
         <scene sceneID="syC-nu-dtY">
             <objects>
-                <viewController id="R1d-vT-Lum" sceneMemberID="viewController">
+                <viewController id="R1d-vT-Lum" customClass="BattleViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EWu-om-bqR"/>
                         <viewControllerLayoutGuide type="bottom" id="yll-Gk-bpK"/>
@@ -234,8 +228,8 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CJq-wk-aJF">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
-                                    <navigationItem title="Title" id="j2S-E5-Nsp">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" id="UjC-co-xfk">
+                                    <navigationItem title="The Cage" id="j2S-E5-Nsp">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Monster" id="UjC-co-xfk">
                                             <connections>
                                                 <segue destination="F0n-Bz-HCb" kind="custom" customClass="DismissSegue" id="yc7-CG-SOa"/>
                                             </connections>
@@ -246,19 +240,86 @@
                                     <rect key="frame" x="-7" y="0.0" width="400" height="44"/>
                                 </variation>
                             </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ICt-DO-ilj">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="150" width="142" height="128"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VS." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajV-WZ-hhW">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="187" y="203" width="26" height="21"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jyb-0q-TtI">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="238" y="150" width="142" height="128"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Monster" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YbB-gr-lB0">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="35" y="298" width="103" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Monster" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r6h-lm-Q57">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="244" y="298" width="131" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syg-Ak-KaA">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Begin Fight!"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="131" y="369" width="138" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="onButtonPressed:" destination="R1d-vT-Lum" eventType="touchUpInside" id="pZp-Th-r9b"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="CJq-wk-aJF"/>
+                                <exclude reference="ICt-DO-ilj"/>
+                                <exclude reference="ajV-WZ-hhW"/>
+                                <exclude reference="Jyb-0q-TtI"/>
+                                <exclude reference="YbB-gr-lB0"/>
+                                <exclude reference="r6h-lm-Q57"/>
+                                <exclude reference="syg-Ak-KaA"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="CJq-wk-aJF"/>
+                                <include reference="ICt-DO-ilj"/>
+                                <include reference="ajV-WZ-hhW"/>
+                                <include reference="Jyb-0q-TtI"/>
+                                <include reference="YbB-gr-lB0"/>
+                                <include reference="r6h-lm-Q57"/>
+                                <include reference="syg-Ak-KaA"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="randomMonsterImage" destination="Jyb-0q-TtI" id="tPK-yZ-Bg9"/>
+                        <outlet property="yourMonsterImage" destination="ICt-DO-ilj" id="Pc1-33-T0h"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="segue.push.alert" customClass="DismissSegue" id="YLj-HN-X4N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KbE-YY-uX0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -284,7 +345,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="H9f-c0-IWp"/>
+        <segue reference="YLj-HN-X4N"/>
         <segue reference="yc7-CG-SOa"/>
     </inferredMetricsTieBreakers>
 </document>

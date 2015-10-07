@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MagicalCreature.h"
 #import "MagicalCreatureViewController.h"
+#import "DismissSegue.h"
 
 @interface MagicalCreatureViewController : UIViewController
 
