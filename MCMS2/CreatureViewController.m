@@ -9,6 +9,9 @@
 #import "CreatureViewController.h"
 
 @interface CreatureViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *editButton;
+
+@property BOOL isEditSelected;
 
 @end
 
@@ -16,7 +19,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.isEditSelected = false;
     // Do any additional setup after loading the view.
+}
+
+- (IBAction)onEditButtonPressed:(UIButton *)sender {
+
+    if (self.isEditSelected) {
+        sender.titleLabel.text = @"Edit";
+        self.isEditSelected = false;
+//        self.editButton.titleLabel.text = @"Done";
+    } else {
+        sender.titleLabel.text = @"Done";
+        self.isEditSelected = true;
+//        self.editButton.titleLabel.text = @"Edit";
+    }
+
+
+
+//    if ([self.editButton.titleLabel.text isEqualToString:@"Edit"]) {
+//        NSLog(@"Edit");
+////        self.editing = false;
+//        self.editButton.titleLabel.text = @"Done";
+//    } else {
+//        NSLog(@"Done");
+//        self.editButton.titleLabel.text = @"Edit";
+//    }
+
 }
 
 - (void)didReceiveMemoryWarning {

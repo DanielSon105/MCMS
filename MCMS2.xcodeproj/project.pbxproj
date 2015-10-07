@@ -13,6 +13,11 @@
 		E026222D1BC45F3000F51766 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E026222B1BC45F3000F51766 /* Main.storyboard */; };
 		E026222F1BC45F3000F51766 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E026222E1BC45F3000F51766 /* Assets.xcassets */; };
 		E02622321BC45F3000F51766 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E02622301BC45F3000F51766 /* LaunchScreen.storyboard */; };
+		E026223B1BC45F8400F51766 /* MagicalCreature.m in Sources */ = {isa = PBXBuildFile; fileRef = E026223A1BC45F8400F51766 /* MagicalCreature.m */; settings = {ASSET_TAGS = (); }; };
+		E02622411BC46D4D00F51766 /* MagicalCreatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E02622401BC46D4D00F51766 /* MagicalCreatureViewController.m */; settings = {ASSET_TAGS = (); }; };
+		E02622451BC4910500F51766 /* monster-image-amarican-chopper.png in Resources */ = {isa = PBXBuildFile; fileRef = E02622421BC4910500F51766 /* monster-image-amarican-chopper.png */; settings = {ASSET_TAGS = (); }; };
+		E02622461BC4910500F51766 /* monster-image-danimal.png in Resources */ = {isa = PBXBuildFile; fileRef = E02622431BC4910500F51766 /* monster-image-danimal.png */; settings = {ASSET_TAGS = (); }; };
+		E02622471BC4910500F51766 /* monster-image-hardcor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E02622441BC4910500F51766 /* monster-image-hardcor.jpg */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,13 @@
 		E026222E1BC45F3000F51766 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E02622311BC45F3000F51766 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E02622331BC45F3000F51766 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E02622391BC45F8400F51766 /* MagicalCreature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalCreature.h; sourceTree = "<group>"; };
+		E026223A1BC45F8400F51766 /* MagicalCreature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalCreature.m; sourceTree = "<group>"; };
+		E026223F1BC46D4D00F51766 /* MagicalCreatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MagicalCreatureViewController.h; path = ../MagicalCreatureViewController.h; sourceTree = "<group>"; };
+		E02622401BC46D4D00F51766 /* MagicalCreatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MagicalCreatureViewController.m; path = ../MagicalCreatureViewController.m; sourceTree = "<group>"; };
+		E02622421BC4910500F51766 /* monster-image-amarican-chopper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "monster-image-amarican-chopper.png"; sourceTree = "<group>"; };
+		E02622431BC4910500F51766 /* monster-image-danimal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "monster-image-danimal.png"; sourceTree = "<group>"; };
+		E02622441BC4910500F51766 /* monster-image-hardcor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "monster-image-hardcor.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,10 @@
 				E02622261BC45F3000F51766 /* AppDelegate.m */,
 				E02622281BC45F3000F51766 /* ViewController.h */,
 				E02622291BC45F3000F51766 /* ViewController.m */,
+				E026223F1BC46D4D00F51766 /* MagicalCreatureViewController.h */,
+				E02622401BC46D4D00F51766 /* MagicalCreatureViewController.m */,
+				E02622391BC45F8400F51766 /* MagicalCreature.h */,
+				E026223A1BC45F8400F51766 /* MagicalCreature.m */,
 				E026222B1BC45F3000F51766 /* Main.storyboard */,
 				E026222E1BC45F3000F51766 /* Assets.xcassets */,
 				E02622301BC45F3000F51766 /* LaunchScreen.storyboard */,
@@ -74,6 +90,9 @@
 		E02622221BC45F3000F51766 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E02622421BC4910500F51766 /* monster-image-amarican-chopper.png */,
+				E02622431BC4910500F51766 /* monster-image-danimal.png */,
+				E02622441BC4910500F51766 /* monster-image-hardcor.jpg */,
 				E02622231BC45F3000F51766 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -136,8 +155,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E02622451BC4910500F51766 /* monster-image-amarican-chopper.png in Resources */,
 				E02622321BC45F3000F51766 /* LaunchScreen.storyboard in Resources */,
 				E026222F1BC45F3000F51766 /* Assets.xcassets in Resources */,
+				E02622461BC4910500F51766 /* monster-image-danimal.png in Resources */,
+				E02622471BC4910500F51766 /* monster-image-hardcor.jpg in Resources */,
 				E026222D1BC45F3000F51766 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,7 +172,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E026222A1BC45F3000F51766 /* ViewController.m in Sources */,
+				E026223B1BC45F8400F51766 /* MagicalCreature.m in Sources */,
 				E02622271BC45F3000F51766 /* AppDelegate.m in Sources */,
+				E02622411BC46D4D00F51766 /* MagicalCreatureViewController.m in Sources */,
 				E02622241BC45F3000F51766 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

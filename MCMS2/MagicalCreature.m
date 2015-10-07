@@ -10,4 +10,16 @@
 
 @implementation MagicalCreature
 
+-(instancetype)initWithName:(NSString *)name andAttack:(NSString *)attack andImage:(UIImage *)image andAccessories:(NSMutableArray *)accessories {
+    self = [super init];
+    if (self) {
+        self.name = name;
+        self.attack = attack;
+        self.image = image;
+        self.accessories = accessories;
+    }
+
+    return self;
+}
+
 @end
