@@ -9,7 +9,7 @@
 #import "MagicalCreatureViewController.h"
 #import "ViewController.h"
 
-@interface MagicalCreatureViewController ()
+@interface MagicalCreatureViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property BOOL isEditSelected;
 @property (weak, nonatomic) IBOutlet UITextField *editNameTextField;
@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *creatureAttackLabel;
 @property (weak, nonatomic) IBOutlet UITableView *tableView2;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIButton *battleButton;
 
 @end
 
@@ -47,12 +48,12 @@
     }
 }
 
--(NSInteger)tableView2:(UITableView *)tableView2 numberOfRowsInSection:(NSInteger)section{
+-(NSInteger)tableView:(UITableView *)tableView2 numberOfRowsInSection:(NSInteger)section{
 
     return self.creature.accessories.count;
 }
 
--(UITableViewCell *)tableView2:(UITableView *)tableView2 cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+-(UITableViewCell *)tableView:(UITableView *)tableView2 cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView2 dequeueReusableCellWithIdentifier:@"CellID2"];
     NSString *accessory = [self.creature.accessories objectAtIndex:indexPath.row];
     cell.textLabel.text = accessory;

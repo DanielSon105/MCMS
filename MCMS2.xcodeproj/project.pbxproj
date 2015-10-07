@@ -18,6 +18,8 @@
 		E02622451BC4910500F51766 /* monster-image-amarican-chopper.png in Resources */ = {isa = PBXBuildFile; fileRef = E02622421BC4910500F51766 /* monster-image-amarican-chopper.png */; settings = {ASSET_TAGS = (); }; };
 		E02622461BC4910500F51766 /* monster-image-danimal.png in Resources */ = {isa = PBXBuildFile; fileRef = E02622431BC4910500F51766 /* monster-image-danimal.png */; settings = {ASSET_TAGS = (); }; };
 		E02622471BC4910500F51766 /* monster-image-hardcor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E02622441BC4910500F51766 /* monster-image-hardcor.jpg */; settings = {ASSET_TAGS = (); }; };
+		E026224A1BC4A7CF00F51766 /* BattleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E02622491BC4A7CF00F51766 /* BattleViewController.m */; settings = {ASSET_TAGS = (); }; };
+		E026224D1BC4A8D600F51766 /* DismissSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = E026224C1BC4A8D600F51766 /* DismissSegue.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,10 @@
 		E02622421BC4910500F51766 /* monster-image-amarican-chopper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "monster-image-amarican-chopper.png"; sourceTree = "<group>"; };
 		E02622431BC4910500F51766 /* monster-image-danimal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "monster-image-danimal.png"; sourceTree = "<group>"; };
 		E02622441BC4910500F51766 /* monster-image-hardcor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "monster-image-hardcor.jpg"; sourceTree = "<group>"; };
+		E02622481BC4A7CF00F51766 /* BattleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleViewController.h; sourceTree = "<group>"; };
+		E02622491BC4A7CF00F51766 /* BattleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BattleViewController.m; sourceTree = "<group>"; };
+		E026224B1BC4A8D600F51766 /* DismissSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissSegue.h; sourceTree = "<group>"; };
+		E026224C1BC4A8D600F51766 /* DismissSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DismissSegue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,10 @@
 				E02622391BC45F8400F51766 /* MagicalCreature.h */,
 				E026223A1BC45F8400F51766 /* MagicalCreature.m */,
 				E026222B1BC45F3000F51766 /* Main.storyboard */,
+				E026224B1BC4A8D600F51766 /* DismissSegue.h */,
+				E026224C1BC4A8D600F51766 /* DismissSegue.m */,
+				E02622481BC4A7CF00F51766 /* BattleViewController.h */,
+				E02622491BC4A7CF00F51766 /* BattleViewController.m */,
 				E026222E1BC45F3000F51766 /* Assets.xcassets */,
 				E02622301BC45F3000F51766 /* LaunchScreen.storyboard */,
 				E02622331BC45F3000F51766 /* Info.plist */,
@@ -171,8 +181,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E026224D1BC4A8D600F51766 /* DismissSegue.m in Sources */,
 				E026222A1BC45F3000F51766 /* ViewController.m in Sources */,
 				E026223B1BC45F8400F51766 /* MagicalCreature.m in Sources */,
+				E026224A1BC4A7CF00F51766 /* BattleViewController.m in Sources */,
 				E02622271BC45F3000F51766 /* AppDelegate.m in Sources */,
 				E02622411BC46D4D00F51766 /* MagicalCreatureViewController.m in Sources */,
 				E02622241BC45F3000F51766 /* main.m in Sources */,
